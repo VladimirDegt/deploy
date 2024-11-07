@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-text);
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    border: none;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 30px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*====================== Styles for select==========================*/
+.custom-select__control {
+    height: 40px !important;
+    border-radius: 10px !important;
+    border: 1px solid var(--stroke) !important;
+    background-color: var(--white) !important;
+    transition: box-shadow var(--transition);
+}
+
+.custom-select__control:hover,
+.custom-select__control:focus,
+.custom-select__control:active {
+    box-shadow: var(--shadow-input) !important;
+}
+
+.custom-select__menu {
+    position: absolute;
+    border-radius: 20px !important;
+    border: 1px solid var(--stroke) !important;
+    background-color: var(--white) !important;
+    box-shadow: var(--shadow) !important;
+    max-height: 200px !important;
+    overflow: hidden !important;
+}
+
+.custom-select__menu-list {
+    padding: 0 !important;
+}
+
+.custom-select__option {
+    cursor: pointer !important;
+    font: var(--body3-font-bold) !important;
+    color: var(--primary-text) !important;
+}
+
+.custom-select__option--is-focused {
+    background-color: var(--secondary) !important;
+}
+
+.custom-select__option--is-selected {
+    background-color: var(--primary) !important;
+}
+
+.custom-select__option:not(:last-child) {
+    border-bottom: 1px solid var(--stroke) !important;
+}
+
+.custom-select__value-container {
+    cursor: text !important;
+}
+
+.custom-select__indicator {
+    cursor: pointer !important;
+}
+
+.custom-select__indicator-separator {
+    display: none !important;
+}
+
+.custom-select__dropdown-indicator {
+    color: var(--primary-text) !important;
+}
+
+.custom-select__dropdown-indicator svg {
+    transform: rotate(0deg);
+}
+
+.custom-select__control--menu-is-open .custom-select__dropdown-indicator svg {
+    transform: rotate(180deg);
+}
+
+.custom-select__value-container--has-value .custom-select__single-value {
+    color: var(--primary-text) !important;
+}
+
+/*====================== Styles for phone==========================*/
+.react-international-phone-input-container .react-international-phone-input {
+    width: 100% !important;
+    height: 41px !important;
+    color: var(--primary-text) !important;
+    font: var(--body3-font-bold) !important;
+    border: 1px solid var(--stroke) !important;
+    background-color: var(--white) !important;
+}
+
+.react-international-phone-country-selector-button__button-content {
+    padding: 10px 14px !important;
+}
+
+/*====================== Styles for datepicker==========================*/
+
+.react-datepicker-wrapper {
+    display: block !important;
+    width: 100% !important;
+    top: 20px;
+}
+
+.react-datepicker__input-container {
+    width: 100% !important;
+}
+
+.react-datepicker__input-container input {
+    width: 100% !important;
+    padding: 10px;
+    margin-top: 6px;
+    font: var(--body3-font-bold);
+    color: var(--primary-text);
+    border: 1px solid var(--stroke);
+    background-color: var(--white);
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow var(--transition);
+}
+
+.react-datepicker__input-container input:focus,
+.react-datepicker__input-container input:hover {
+    box-shadow: var(--shadow-input);
+    cursor: pointer;
+}
+
+.react-datepicker__time-container {
+    width: 60px !important;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    width: 60px !important;
+}
+
+.react-datepicker__time-container
+    .react-datepicker__time
+    .react-datepicker__time-box
+    ul.react-datepicker__time-list
+    li.react-datepicker__time-list-item {
+    padding: 0 !important;
+}
+
+.react-datepicker__triangle {
+    display: none !important;
+}
+
+.react-datepicker__close-icon {
+    top: 4px !important;
+}

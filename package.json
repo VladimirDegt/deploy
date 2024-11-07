@@ -1,0 +1,87 @@
+{
+    "name": "Wanderways",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && npm run copyfiles",
+        "copyfiles": "copyfiles 404.html dist",
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+        "test-ct": "playwright test -c playwright-ct.config.ts",
+        "prettier": "prettier . --check --ignore-unknown",
+        "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss,module.css,html}'",
+        "lint": "npx eslint . --report-unused-disable-directives --max-warnings 5 && stylelint **/*.module.css --max-warnings 0",
+        "lint:fix": "eslint . --fix && stylelint **/*.module.css --fix",
+        "knip": "knip",
+        "playwright": "npx playwright test",
+        "playwright-ui": "npx playwright test --ui"
+    },
+    "dependencies": {
+        "@hookform/resolvers": "^3.9.0",
+        "@types/google-libphonenumber": "^7.4.30",
+        "class-variance-authority": "^0.7.0",
+        "google-libphonenumber": "^3.2.38",
+        "normalize.css": "^8.0.1",
+        "playwright": "^1.46.0",
+        "react": "^18.2.0",
+        "react-datepicker": "^7.3.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.52.1",
+        "react-international-phone": "^4.3.0",
+        "react-modal": "^3.16.1",
+        "react-redux": "^9.1.2",
+        "react-router-dom": "^6.23.1",
+        "react-select": "^5.8.0",
+        "react-spinners": "^0.14.1",
+        "react-toastify": "^10.0.5",
+        "redux-persist": "^6.0.0",
+        "sass": "^1.70.0",
+        "simplebar-react": "^3.2.6",
+        "yup": "^1.4.0"
+    },
+    "devDependencies": {
+        "@playwright/experimental-ct-react": "^1.41.1",
+        "@playwright/test": "^1.46.0",
+        "@reduxjs/toolkit": "^2.2.6",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@types/react-modal": "^3.16.3",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "blob-polyfill": "^9.0.20240710",
+        "copyfiles": "^2.4.1",
+        "eslint": "^9.9.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.35.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.9",
+        "eslint-plugin-unicorn": "^56.0.0",
+        "gh-pages": "^6.1.1",
+        "globals": "^15.8.0",
+        "knip": "^5.27.0",
+        "prettier": "3.3.3",
+        "stylelint": "^16.8.1",
+        "stylelint-config-standard": "^36.0.1",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.1.0",
+        "vite": "^5.2.0"
+    },
+    "overrides": {
+        "eslint": "^9.9.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

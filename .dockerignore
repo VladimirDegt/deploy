@@ -1,0 +1,15 @@
+node_modules
+test
+dist
+test-results
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.idea
+.github
+.git
+.gitignore
+.prettierrc
+.prettierignore
+Dockerfile
+README.md

@@ -1,0 +1,64 @@
+:root {
+    /* Colors Gray*/
+    --primary-text: #101828;
+    --secondary-text: #989898;
+    --stroke: #e7e7e6;
+    --background: #fafafa;
+    --white: #ffffff;
+    --overlay: rgba(16, 24, 40, 0.2);
+
+    /* Colors Main*/
+    --primary: #6377e2;
+    --secondary: #e7ecfa;
+
+    /* Colors Other*/
+    --blue-label: #6377e2;
+    --green-success: #5bad77;
+    --yellow-warning: #e9bc7e;
+    --red-error: #e97e80;
+
+    /* Fonts */
+    --title-font-bold: 600 40px/48px 'Urbanist', sans-serif;
+    --display-font-bold: 600 24px/32px 'Urbanist', sans-serif;
+
+    --headline1-bold: bold 24px/32px 'Urbanist', sans-serif;
+    --headline2-bold: bold 16px/20px 'Urbanist', sans-serif;
+    --headline3-bold: bold 14px/20px 'Urbanist', sans-serif;
+
+    --body1-font-bold: 600 18px/22px 'Urbanist', sans-serif;
+    --body2-font-bold: 600 16px/19px 'Urbanist', sans-serif;
+    --body3-font-bold: normal 16px/19px 'Urbanist', sans-serif;
+    --body4-font-bold: 500 14px/17px 'Urbanist', sans-serif;
+    --body4-font-700: 700 14px/17px 'Urbanist', sans-serif;
+
+    /* Shadow */
+    --shadow: 0 0 20px 0 rgba(16, 24, 40, 0.08);
+    --shadow-input: 0 0 0 4px rgba(231, 236, 250, 0.5);
+
+    /* Transition */
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Width Card Ride */
+    --cart-ride-width: 0px;
+
+    /* Z-index */
+    --z-index-modal: 10px;
+
+    /* Breakpoints */
+    --mobile: 320px;
+    --tablet: 768px;
+    --desktop: 1440px;
+
+    /*Styles for toast*/
+    --toastify-icon-color-info: #ffffff;
+    --toastify-icon-color-success: #ffffff;
+    --toastify-icon-color-warning: #ffffff;
+    --toastify-icon-color-error: #ffffff;
+    --toastify-font-family: 'Urbanist', sans-serif;
+    --toastify-color-progress-info: #ffffff;
+    --toastify-color-progress-success: #ffffff;
+    --toastify-color-progress-warning: #ffffff;
+    --toastify-color-progress-error: #ffffff;
+    --toastify-toast-min-height: 46px;
+    --toastify-toast-width: 360px;
+}
